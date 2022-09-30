@@ -1,0 +1,304 @@
+:root{
+    --background-color:rgb(228, 255, 255);
+    --text-color:rgb(62, 57, 57);
+    --text-Area:white;
+
+
+}
+body{
+    padding: 0;
+    background-color:var(--background-color);
+    font-family: sans-serif;
+    display: flexbox;
+}
+.appname{
+    color: var(--text-color);
+}
+h3{
+    text-align: left;
+    padding: 20px;
+
+}
+h4{
+    margin-left: 50px;
+
+
+}
+img{
+    width: 15px;
+   text-align: justify;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.new{
+    margin: 10px;
+    padding: 10px;
+    width: 10%;
+    background-color:royalblue;
+    color: white;
+    font-size: 13px;
+    border: none;
+    text-align: center;
+    
+    border-radius: 3px;
+
+}
+.save{
+    margin: 2px;
+    padding: 10px;
+    width: 10%;
+    background-color:royalblue;
+    color: white;
+    font-size: 13px;
+    border: none;
+    text-align: center;
+    border-radius: 3px;}
+.font-size{
+    font-size: 13px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    }
+.bold{
+    margin: 5px;
+    padding: 10px;
+    width: 10%;
+    background-color:royalblue;
+    color: white;
+    
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.underline{
+    margin: 10px;
+    padding: 10px;
+    width: 10%;
+    background-color:royalblue;
+    color: white;
+    font-size: 13px;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 3px;
+
+
+
+}
+.font{
+    margin-left: 20px;
+}
+textarea{
+    width: 90%;
+    height: 500px;
+    background-color: white;
+    margin-top: 30px;
+
+}
+.save:hover{
+    background-color: rgb(255, 152, 121);
+    transition: 600ms;
+
+}
+.new:hover{
+    background-color: rgb(255, 152, 121);
+    transition: 600ms;
+
+}
+.underline:hover{
+    background-color: rgb(255, 122, 82);
+    transition: 600ms;
+}
+.bold:hover{
+    background-color: rgb(255, 131, 93);
+    transition: 600ms;
+
+}
+textarea:hover{
+    background-color: white;
+    transition: 600ms;
+}
+.font-size:hover{
+    transition: 600ms;
+    background-color: rgb(121, 166, 255);
+
+}
+.menu{
+    text-align: center;
+}
+.box{
+    text-align: center;
+}
+.copy{
+    margin: 20px;
+    padding: 10px;
+    width: 10%;
+    background-color:rgb(107, 109, 109);
+    color: white;
+    font-size: 15px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 3px;
+   
+
+}
+#menu-button{
+    color:var(--text-color)
+}
+.reset{
+    margin: 20px;
+    padding: 10px;
+    width: 10%;
+    background-color:rgb(126, 126, 126);
+    color: white;
+    font-size: 15px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 3px;
+}
+.copy:hover{
+    background-color: rgb(121, 166, 255);
+    transition: 600ms;
+}
+.reset:hover{
+    background-color: rgb(121, 166, 255);
+    transition: 600ms;
+}
+.box2{
+    text-align: center;
+}
+
+.mobile-nav,section.menu{
+    display: none;
+}
+.box3{
+    display: none;
+}
+
+@media (width <550px) {
+    .default-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: revert;
+    }
+    #menu-button{
+        display: block;
+        background: transparent;
+        border-radius: 8px;
+        margin-left: auto;
+
+    }
+    section.menu{
+        display: revert;
+        height: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background: hsl(0, 0%, 100%);
+        width:50%;
+        transition:height 0.6s ease-in-out;
+        
+    }
+    section.menu ul{
+        list-style: none;
+    }
+    section.menu ul>li {
+        
+    }
+    section.menu nav{
+        margin-top: 16px;
+        font-size: 2rem;
+    }
+    #close-menu{
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        background: transparent;
+        font-size: x-large;
+        border: none;
+
+
+    }
+    .box2{
+        display: none;
+    }
+    .box3{
+        display: revert;
+        text-align:right;
+
+}
+#copy{
+
+    padding: 10px;
+    width: 20%;
+    background-color:royalblue;
+    color: white;
+    font-size: 10px;
+    border: none;
+    text-align:center;
+    
+    border-radius: 3px;
+   
+
+}
+#reset{
+    margin-right: 110px;
+   
+    padding: 10px;
+    width: 20%;
+    background-color: royalblue;
+    color: white;
+    font-size: 10px;
+    border: none;
+    text-align: center;
+    
+    border-radius: 3px;
+}
+button.new{
+    width: 100px;
+
+
+}
+input.save{
+    width: 100px;
+}
+select.font-size{
+    width: 100px;
+}
+input.bold{
+    width: 100px;
+}
+input.underline{
+    width: 100px;
+}
+textarea{
+    height:500px
+
+}
+
+}
+
+@media(prefers-color-scheme: dark){
+    body{
+        --background-color:rgb(116, 116, 116);
+        --text-area:grey;
+        --text-color:white;
+    }
+    .appname{
+        color:var(--text-color);
+    }
+    
+
+
+}

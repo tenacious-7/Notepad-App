@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NotePad App</title>
+</head>
+
+<body>
+    <section class="menu">
+        <button id="close-menu">&times;</button>
+        <nav>
+            <ul>
+               <li><a href="index.html" target="_blank"><button class="new">New File</button></a></li>
+               <li><input title="Click here to save" type="button" value="Save File" class="save" onclick="saveFile()"></li> 
+               <li><label for="font-size" class="font">font size</label></li>
+               <li>  <select class="font-size" onchange="changeSize(this)">
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+                <option>50</option>
+                <option>60</option>
+                <option>70</option>
+                <option>80</option>
+            
+        </select></li>
+
+        <li> <label for="button">Tools</label></li>
+
+        <li> <input title="Click here for bold text" type="button" value="Bold" class="bold" onclick="Bold()"></li>
+        <li><input title="Click here for underlined text" type="button" value="Underline" class="underline" onclick="underline()"></li>
+
+            </ul>
+        </nav>
+    </section>
+
+    <header>
+        <nav class="mobile-nav">
+            <button id="menu-button">Menu</button>
+
+        </nav>
+    </header>
+
+
+    <div>
+</div>
+
+    <div class="menu">
+        <span class="appname"><b>NotePad App</b><img src="logo.jfif" alt="notepad logo">
+        <nav class="default-nav">
+        <a href="index.html" target="_blank"><input title="Click here for new File" type="button" value="New File" class="new"></a>
+        <input title="Click here to save" type="button" value="Save File" class="save" onclick="saveFile()">
+        <label for="font-size" class="font">font size</label>
+        <select class="font-size" onchange="changeSize(this)">
+            <option>20</option>
+            <option>30</option>
+            <option>40</option>
+            <option>50</option>
+            <option>60</option>
+            <option>70</option>
+            <option>80</option>
+        
+    </select>
+        <label for="button">Tools</label>
+        <input title="Click here for bold text" type="button" value="Bold" class="bold" onclick="Bold()">
+        <input title="Click here for underlined text" type="button" value="Underline" class="underline" onclick="underline()">
+        </nav>
+
+    </div>
+    <div class="box">
+        <textarea placeholder="Enter your notes here" id="content"  rows="30" cols="70" >
+
+    </textarea>
+</div>
+<div class="box2">
+       
+        <input type="button" value="copy" class="copy" onclick="getText()">
+
+        <input type="button" value="reset" class="reset" onclick="reset()">
+    </div>
+    <!-- for mobile  -->
+    <div class="box3">
+       
+        <input id="copy" type="button" value="copy" class="copy2" onclick="getText()">
+    
+       <input id="reset" type="button" value="reset" class="reset2" onclick="reset()">
+    </div>
+    
+
+
+    <script src="main.js"></script>
+  
+</body>
+
+</html>
